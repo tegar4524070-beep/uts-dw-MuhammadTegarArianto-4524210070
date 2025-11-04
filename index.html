@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generator Menu Restoran Bintang 5</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Restoran Bintang 5</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Generator Menu Restoran Bintang 5</h1>
+    <h1>Menu Restoran Bintang 5</h1>
   </header>
 
-  <main>
-    <section class="panel-kontrol">
-      <h2>Panel Kontrol</h2>
-      <form action="/submit-recipe" method="post">
-        <label for="menu-nama">Nama Menu:</label>
-        <input type="text" id="menu-nama" placeholder="Masukkan nama menu" required>
+  <main class="main-container">
+    <section class="Masukkan Menu dan Harga">
+      <form id="menu-form" action="/submit-recipe" method="post">
+        <fieldset>
+          <legend>MENU DAN HARGA</legend>
 
-        <label for="menu-harga">Harga:</label>
-        <input type="text" id="menu-harga" placeholder="Contoh: Rp25.000" required>
+          <label for="menu-nama">Nama Menu:</label>
+          <input type="text" id="menu-nama" name="menu-nama" placeholder="Masukkan nama menu..." required />
 
-        <label for="menu-deskripsi">Deskripsi:</label>
-        <textarea id="menu-deskripsi" placeholder="Masukkan deskripsi singkat tentang menu" required></textarea>
+          <label for="menu-harga">Harga:</label>
+          <input type="text" id="menu-harga" name="menu-harga" placeholder="Contoh: Rp25.000" required />
 
-        <label for="menu-gambar">Pilih Gambar Menu:</label>
-        <input type="file" id="menu-gambar" accept="image/*">
+          <label for="menu-deskripsi">Deskripsi Menu:</label>
+          <textarea id="menu-deskripsi" name="menu-deskripsi" placeholder="Masukkan deskripsi menu" required></textarea>
+
+          <button type="submit">Simpan Menu</button>
+        </fieldset>
       </form>
     </section>
 
-    <section class="area-pratinjau">
-      <h2>Area Pratinjau</h2>
+    <article class="Menu-Bintang-5">
+      <h2>Menu Restoran Bintang 5</h2>
       <div class="preview-card">
-        <img id="preview-gambar" src="placeholder.jpg" alt="Gambar Menu Hidangan" width="300">
-        <h3 id="preview-nama" data-default="Nama Menu">Nama Menu</h3>
-        <p id="preview-harga" data-default="Rp0">Rp0</p>
-        <p id="preview-deskripsi" data-default="Deskripsi menu akan muncul di sini.">
-          Deskripsi menu akan muncul di sini.
-        </p>
+        <img id="preview-gambar" src="place.jpg" alt="Gambar hidangan utama resep" width="300" />
+        <h3 id="preview-nama">Nama Menu</h3>
+        <p id="preview-harga">Rp0</p>
+        <p id="preview-deskripsi">Deskripsi menu akan muncul di sini.</p>
       </div>
-    </section>
+    </article>
   </main>
 
   <footer>
-    <p>&copy; 2025 Generator Menu Restoran</p>
+    <p>© 2025 Menu Restoran Bintang 5 | Dibuat untuk UTS-DW-A</p>
   </footer>
 
   <script src="script.js"></script>
