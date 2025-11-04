@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fff8f3, #ffe8d6);
+  color: #2c3e50;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-bottom: 3px solid #e67e22;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: #e67e22;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+@media (min-width: 992px) {
+  .main-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+
+
+form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(230, 126, 34, 0.15);
+  transition: transform 0.2s ease;
+}
+
+legend {
+  font-weight: 700;
+  color: #e67e22;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  resize: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #e67e22;
+  box-shadow: 0 0 8px rgba(230, 126, 34, 0.3);
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(90deg, #f39c12, #e67e22);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.03);
+  background: linear-gradient(90deg, #e67e22, #d35400);
+}
+
+.Menu-Bintang-5{
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.Menu-Bintang-5:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+.preview-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.preview-card img:hover {
+  transform: scale(1.02);
+}
+
+#preview-nama {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #e67e22;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+#preview-harga {
+  font-size: 1.3rem;
+  color: #27ae60;
+  font-weight: 600;
+  margin: 0.3rem 0;
+}
+
+#preview-deskripsi {
+  font-size: 1rem;
+  color: #555;
+  max-width: 80%;
+  margin: 0 auto;
+  line-height: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #fff;
+  color: #777;
+  font-size: 0.9rem;
+  border-top: 3px solid #e67e22;
+}
